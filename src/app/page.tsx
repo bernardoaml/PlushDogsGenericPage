@@ -1,5 +1,8 @@
 import React from "react";
 import FrontPage from "@/components/FrontPage";
+import SemiFooter from "@/components/SemiFooter";
+import Tokenomics from "@/components/Tokenomics";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 const App: React.FC = () => {
   const tokenData = {
@@ -13,8 +16,21 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <FrontPage {...tokenData} />
+      <Tokenomics
+      leftImage="/luffy-full-body.png" // Substitua pelo caminho real da imagem
+
+      chartImage="/progres.png"
+    />
+    <WhyChooseUs
+      leftImage="/zoro-left.webp" // Caminho para a imagem à esquerda
+      rightImage="/zoro-right.webp" // Caminho para a imagem à direita
+      title="Why Choose Generic Coin?"
+      description="Experience trust and transparency with Generic Coin: LP Burned, Contract Renounced, and 0% Fees! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis quo nihil quia labore dicta enim fuga possimus aut nulla accusamus culpa non dignissimos, neque, voluptatem earum reiciendis magni dolore!"
+    />
+      <SemiFooter/>
     </div>
   );
 };
 
 export default App;
+
