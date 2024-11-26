@@ -1,4 +1,5 @@
 import React from "react";
+import { FaTelegramPlane, FaTwitter } from "react-icons/fa";
 
 interface FrontPageProps {
   title: string; // Main title
@@ -10,19 +11,60 @@ interface FrontPageProps {
 
 const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, logoUrl, buyLink }) => {
   return (
-    <div className="relative text-center p-8 bg-gradient-to-r from-gray-800 via-gray-900 to-black shadow-lg rounded-lg overflow-hidden min-h-screen">
+    <div className="relative bg-gradient-to-r from-gray-800 via-gray-900 to-black shadow-lg overflow-hidden min-h-screen">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-30 pointer-events-none bg-gradient-to-br from-blue-500 to-purple-600 blur-3xl"></div>
 
-      {/* Logo no canto superior esquerdo */}
-      <img
-        src={logoUrl}
-        alt="Logo"
-        className="absolute top-4 left-4 h-12 w-auto object-contain rounded-full"
-      />
+      {/* Barra superior */}
+      <div className="relative z-20 flex items-center justify-between px-8 py-4">
+        {/* Logo */}
+        <img
+          src={logoUrl}
+          alt="Logo"
+          className="h-12 w-auto object-contain rounded-full"
+        />
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center items-center h-full">
+        {/* Navegação */}
+        <nav className="flex space-x-8 text-white font-bold text-lg">
+          <a href="#about" className="hover:text-blue-500 transition">About</a>
+          <a href="#tokenomics" className="hover:text-blue-500 transition">Tokenomics</a>
+          <a href="#why-us" className="hover:text-blue-500 transition">Why Choose Us?</a>
+        </nav>
+
+        {/* Botão "Buy Now" e ícones sociais */}
+        <div className="flex items-center space-x-4">
+          {/* Botão "Buy Now" */}
+          <a
+            href={buyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300"
+          >
+            Buy Now
+          </a>
+
+          {/* Ícones sociais */}
+          <a
+            href="https://telegram.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-blue-500 transition"
+          >
+            <FaTelegramPlane size={24} />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition"
+          >
+            <FaTwitter size={24} />
+          </a>
+        </div>
+      </div>
+
+      {/* Conteúdo Principal */}
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center p-8">
         <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">{title}</h1>
         <p className="text-lg mt-4 text-gray-300 max-w-2xl mx-auto leading-relaxed">{description}</p>
         {imageUrl && (
@@ -33,16 +75,6 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
           />
         )}
       </div>
-
-      {/* Button */}
-      <a
-        href={buyLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute bottom-4 right-4 bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300"
-      >
-        Buy Now
-      </a>
     </div>
   );
 };
