@@ -1,0 +1,24 @@
+/* Animação para mover o texto da direita para a esquerda */
+@keyframes scroll {
+    0% {
+      transform: translateX(0); /* Início da animação */
+    }
+    100% {
+      transform: translateX(-50%); /* Move até metade do contêiner */
+    }
+  }
+  
+  /* Contêiner que contém os textos */
+  .tickerTrack {
+    display: flex;
+    overflow: hidden; /* Esconde conteúdo fora da faixa */
+    white-space: nowrap; /* Evita quebra de linha */
+    position: relative;
+  }
+  
+  /* Conteúdo animado */
+  .tickerContent {
+    display: flex;
+    animation: scroll 5s linear infinite; /* Animação contínua */
+  }
+  
