@@ -1,0 +1,21 @@
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .carouselContainer {
+    overflow: hidden; /* Esconde o conteúdo fora dos limites */
+    position: relative;
+    width: 100%;
+  }
+  
+  .carouselTrack {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Animação contínua */
+    width: calc(200%); /* Duplicamos o conteúdo */
+  }
+  
