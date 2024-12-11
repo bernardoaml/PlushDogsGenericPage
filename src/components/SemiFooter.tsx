@@ -29,31 +29,66 @@ const SemiFooter: React.FC = () => {
 
       {/* Ícones e textos */}
       <div className="flex justify-center items-center gap-12 mb-8">
-        {/* Twitter */}
-        <div className="flex flex-col items-center">
-          <FaTwitter size={48} className="text-orange-500 mb-2 cursor-pointer" />
-          <p className="font-bold">Twitter Growing!</p>
-        </div>
-        {/* Telegram */}
-        <div className="flex flex-col items-center">
-          <FaTelegramPlane size={48} className="text-orange-500 mb-2 cursor-pointer" />
-          <p className="font-bold">Telegram Growing!</p>
-        </div>
-        {/* Instagram */}
-        <div className="flex flex-col items-center">
-          <FaInstagram size={48} className="text-orange-500 mb-2 cursor-pointer"/>
-          <p className="font-bold">Instagram Growing!</p>
-        </div>
-        {/* YouTube */}
-        <div className="flex flex-col items-center">
-          <FaYoutube size={48} className="text-orange-500 mb-2 cursor-pointer" />
-          <p className="font-bold">Youtube Growing!</p>
-        </div>
-        {/* TikTok */}
-        <div className="flex flex-col items-center">
-          <FaTiktok size={48} className="text-orange-500 mb-2 cursor-pointer" />
-          <p className="font-bold">TikTok Growing!</p>
-        </div>
+  {/* Twitter */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://twitter.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaTwitter size={48} className="text-blue-400 mb-2 cursor-pointer" />
+    </a>
+    <p className="font-bold">Twitter Growing!</p>
+  </div>
+
+  {/* Telegram */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://telegram.org"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaTelegramPlane size={48} className="text-blue-400 mb-2 cursor-pointer" />
+    </a>
+    <p className="font-bold">Telegram Growing!</p>
+  </div>
+
+  {/* Instagram */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaInstagram size={48} className="text-blue-400 mb-2 cursor-pointer" />
+    </a>
+    <p className="font-bold">Instagram Growing!</p>
+  </div>
+
+  {/* YouTube */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://youtube.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaYoutube size={48} className="text-blue-400 mb-2 cursor-pointer" />
+    </a>
+    <p className="font-bold">Youtube Growing!</p>
+  </div>
+
+  {/* TikTok */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://tiktok.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaTiktok size={48} className="text-blue-400 mb-2 cursor-pointer" />
+    </a>
+    <p className="font-bold">TikTok Growing!</p>
+  </div>
+
       </div>
 
       {/* Texto inferior */}

@@ -5,7 +5,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}", // Inclui componentes
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ['VenusRising', 'sans-serif'], // Nome da fonte e fallback
+      },
+    },
   },
   plugins: [],
 };
