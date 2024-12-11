@@ -4,21 +4,22 @@ import styles from "./InfiniteCarousel.module.css"; // Css File
 const InfiniteCarousel: React.FC = () => {
   // Images
   const images = [
-    "/images/image1.jpg",
-    "/images/image2.jpg",
-    "/images/image3.jpg",
-    "/images/image4.jpg",
-    "/images/image5.jpg",
-    "/images/image6.jpg",
-    "/images/image7.jpg",
+    "/images/1.png",
+    "/images/2.png",
+    "/images/3.png",
+    "/images/4.png",
+    "/images/5.png",
+    "/images/6.png",
+    "/images/7.png",
+    "/images/8.png",
+    "/images/9.png",
+    "/images/11.png",
+    "/images/12.png",
+    "/images/14.png",
   ];
 
   return (
-    <div className="relative bg-black text-white py-8">
-      {/* Centered Text */}
-      <h2 className="text-center text-2xl font-bold uppercase mb-8">
-        The official coin for Mugiwaras
-      </h2>
+    <div className="relative bg-gradient-to-r from-gray-900 to-black text-white py-8">
 
       {/* White Lines */}
       <div className="relative">

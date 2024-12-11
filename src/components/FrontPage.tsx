@@ -11,9 +11,9 @@ interface FrontPageProps {
 
 const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, logoUrl, buyLink }) => {
   return (
-    <div className="relative bg-gradient-to-r from-gray-800 via-gray-900 to-black shadow-lg overflow-hidden min-h-screen">
+    <div className="relative bg-[url('/back1.png')] shadow-lg overflow-hidden min-h-screen">
       {/* Background Decoration */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none bg-gradient-to-br from-blue-500 to-purple-600 blur-3xl"></div>
+      <div className="absolute inset-0 opacity-30 pointer-events-none bg-gradient-to-br from-blue-900 to-purple-800 blur-3xl"></div>
 
       {/* Barra superior */}
       <div className="relative z-20 flex items-center justify-between px-8 py-4">
@@ -71,7 +71,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
           <img
             src={imageUrl}
             alt={title}
-            className="mt-8 w-3/5 mx-auto rounded-xl shadow-xl border border-gray-700"
+            className="mt-8 w-md mx-auto rounded-xl shadow-xl border border-gray-700"
           />
         )}
       </div>

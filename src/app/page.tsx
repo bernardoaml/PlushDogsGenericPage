@@ -11,17 +11,33 @@ import BlackFooter from "@/components/BlackFooter";
 
 const App: React.FC = () => {
   const [showContent, setShowContent] = useState(false); // Estado para controlar os componentes
+  const tokenData = {
+      title: "PLUSH DOG $PLUSH",
+      description: "Is a fun and innovative meme token that brings the energy and spirit of cryptocurrency to the world of dog lovers. With a focus on building a strong and engaged community, PLUSH aims to be more than just a currency it’s a true \"family\" in the crypto universe. Join the PLUSH DOG journey and be part of a movement that’s about more than just numbers it’s about fun, friendship, and a love for dogs. Get ready!!",
+      imageUrl: "/plushgif.gif", // Substituir pelo URL real da imagem
+      logoUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHl1c2lxdDVlbDZzNThmcGZobWxuMjJkN2s3NXgzZWJyZnozZnBjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nQDKSeRlIyfmw/giphy.webp", // Substituir pela URL real do logo
+      buyLink: "https://pump.fun/buy-amazing-token", // Substituir pelo link real
+  };
 
-  return (
-    <div className="min-h-screen bg-gray-100">
-      <IntroPage onStart={() => setShowContent(true)} />
-      {/* Render components after click */}
-      {showContent && (
-        <>
-          <InfiniteCarousel />
-          <BlackFooter />
-        </>
-      )}
+  return (<div>
+    <FrontPage {...tokenData} />
+    <Ticker/>
+    <Tokenomics
+      leftImage="/plushmoustache.png" // Substitua pelo caminho real da imagem
+
+      chartImage="/progres.png"
+      />
+      <Ticker/>
+      <WhyChooseUs
+      leftImage="/13.png" // Caminho para a imagem à esquerda
+      rightImage="/15.png" // Caminho para a imagem à direita
+      title="Why Choose PLUSH DOG?"
+      description="Experience trust and transparency with $PLUSH: LP Burnt, Contract Renounced, and 0% Fees.
+      We prioritize the safety and growth of our community. With a burnt liquidity pool (LP), we ensure that there’s no risk of rug pulls, creating a secure environment for investors. By renouncing the contract, we eliminate any possibility of future manipulation, giving you full control over your investment. Plus, with 0% transaction fees, you can enjoy seamless transactions without any hidden costs. Join us!"
+      />
+      <Ticker/>
+      <InfiniteCarousel/>
+      <SemiFooter/>
     </div>
   );
 };
@@ -34,13 +50,6 @@ export default App;
 
 
 
-// const tokenData = {
-//   title: "Generic Token Name $TOKEN",
-//   description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nobis atque enim cupiditate, quod velit alias quam ipsam quos numquam blanditiis quasi repellendus molestias consequatur sunt libero placeat accusamus quisquam?",
-//   imageUrl: "https://media.tenor.com/6ZhzHHYyNxoAAAAM/luffy.gif", // Substituir pelo URL real da imagem
-//   logoUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHl1c2lxdDVlbDZzNThmcGZobWxuMjJkN2s3NXgzZWJyZnozZnBjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nQDKSeRlIyfmw/giphy.webp", // Substituir pela URL real do logo
-//   buyLink: "https://pump.fun/buy-amazing-token", // Substituir pelo link real
-// };
 
 {/* <FrontPage {...tokenData} />
 <Ticker/>
@@ -58,3 +67,17 @@ description="Experience trust and transparency with Generic Coin: LP Burned, Con
 />
 <Ticker/>
 <SemiFooter/> */}
+
+
+
+
+// <div className="min-h-screen bg-gray-100">
+//   <IntroPage onStart={() => setShowContent(true)} />
+//   {/* Render components after click */}
+//   {showContent && (
+//     <>
+//       <InfiniteCarousel />
+//       <BlackFooter />
+//     </>
+//   )}
+// </div>

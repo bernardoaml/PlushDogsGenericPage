@@ -19,6 +19,6 @@
   /* Conteúdo animado */
   .tickerContent {
     display: flex;
-    animation: scroll 5s linear infinite; /* Animação contínua */
+    animation: scroll 10s linear infinite; /* Animação contínua */
   }
   

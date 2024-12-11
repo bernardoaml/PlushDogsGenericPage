@@ -7,27 +7,26 @@ interface TokenomicsProps {
 
 const Tokenomics: React.FC<TokenomicsProps> = ({ leftImage, chartImage }) => {
   return (
-    <div className="relative bg-gradient-to-r from-orange-400 to-orange-500 py-16 px-8 flex items-center min-h-screen">
+    <div className="relative bg-[url('/back2.gif')] py-16 px-8 flex items-center min-h-screen">
       {/* Imagem Grande à Esquerda */}
       <div className="flex-1 flex justify-center">
         <img
           src={leftImage}
           alt="Left Illustration"
-          className="max-w-sm md:max-w-lg object-contain rounded-lg "
+          className="w-full max-w-xl md:max-w-2xl object-contain rounded-lg"
         />
       </div>
 
       {/* Conteúdo à Direita */}
-      <div className="flex-1 flex flex-col items-center text-white text-center">
+      <div className="flex-1 flex flex-col items-center text-white text-center outline-8 outline-black">
         {/* Título */}
-        <h2 className="text-5xl font-bold mb-8 drop-shadow-lg">Tokenomics</h2>
-        <h3 className="font-bold mb-8 drop-shadow-lg">All you need to know before pumping</h3>
+        <h2 className="text-5xl font-bold mb-8 drop-shadow-lg font-mono ">Tokenomics</h2>
 
         {/* Imagem do Gráfico */}
         <img
           src={chartImage}
           alt="Tokenomics Chart"
-          className="max-w-md md:max-w-lg object-contain rounded-lg"
+          className="w-full max-w-xl md:max-w-2xl object-contain rounded-lg"
         />
       </div>
     </div>

@@ -14,7 +14,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   description,
 }) => {
   return (
-    <div className="relative bg-gradient-to-r from-orange-300 to-orange-500 py-16 px-8 flex flex-col items-center text-center">
+    <div className="relative bg-[url('/back4.png')] py-16 px-8 flex flex-col items-center text-center">
       {/* Título */}
       <h2 className="text-5xl font-bold text-white mb-8 drop-shadow-lg">
         {title}
