@@ -12,14 +12,14 @@ const SemiFooter: React.FC = () => {
       </p>
 
       {/* Imagens (opcionalmente usar placeholders por enquanto) */}
-      <div className="absolute top-8 left-8">
+      <div className="absolute top-8 left-8 hidden lg:flex">
         <img
           src="/leftgif.gif"
           alt="Left Illustration"
           className="rounded-full shadow-lg w-32 md:w-40 lg:w-48"
         />
       </div>
-      <div className="absolute top-8 right-8">
+      <div className="absolute top-8 right-8 hidden lg:flex">
         <img
           src="/rightgif.gif"
           alt="Right Illustration"
@@ -28,7 +28,7 @@ const SemiFooter: React.FC = () => {
       </div>
 
       {/* Ícones e textos */}
-      <div className="flex justify-center items-center gap-12 mb-8">
+      <div className="flex justify-center items-center gap-8 mb-8">
   {/* Twitter */}
   <div className="flex flex-col items-center">
     <a
@@ -36,9 +36,9 @@ const SemiFooter: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaTwitter size={48} className="text-blue-400 mb-2 cursor-pointer" />
+      <FaTwitter size={36} className="text-blue-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Twitter Growing!</p>
+    <p className="font-bold text-xs">Twitter Growing!</p>
   </div>
 
   {/* Telegram */}
@@ -48,9 +48,9 @@ const SemiFooter: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaTelegramPlane size={48} className="text-blue-400 mb-2 cursor-pointer" />
+      <FaTelegramPlane size={36} className="text-blue-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Telegram Growing!</p>
+    <p className="font-bold text-xs">Telegram Growing!</p>
   </div>
 
   {/* Instagram */}
@@ -60,9 +60,9 @@ const SemiFooter: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaInstagram size={48} className="text-blue-400 mb-2 cursor-pointer" />
+      <FaInstagram size={36} className="text-blue-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Coming Soon!</p>
+    <p className="font-bold text-xs">Coming Soon!</p>
   </div>
 
   {/* YouTube */}
@@ -72,9 +72,9 @@ const SemiFooter: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaYoutube size={48} className="text-blue-400 mb-2 cursor-pointer" />
+      <FaYoutube size={36} className="text-sky-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Coming Soon!</p>
+    <p className="font-bold text-xs">Coming Soon!</p>
   </div>
 
   {/* TikTok */}
@@ -84,16 +84,16 @@ const SemiFooter: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaTiktok size={48} className="text-blue-400 mb-2 cursor-pointer" />
+      <FaTiktok size={36} className="text-sky-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Coming Soon!</p>
+    <p className="font-bold text-xs">Coming Soon!</p>
   </div>
 
       </div>
 
       {/* Texto inferior */}
       <p className="text-sm text-gray-200 max-w-3xl mx-auto">
-      DISCLOSURE: By purchasing $PLUSH coin, you agree that you are not purchasing a security  or investment contract and you agree to hold the team harmless and not liable for any loses or taxes you may incur. Although PLUSH is a community driven Defi Ecosystem and not a registered digital currency, alwaus make sure that you are in compliance with local laws and regulations before you make any purchase.
+      DISCLOSURE: By purchasing $PLUSH coin, you agree that you are not purchasing a security  or investment contract and you agree to hold the team harmless and not liable for any loses or taxes you may incur. Although PLUSH is a community driven Defi Ecosystem and not a registered digital currency, always make sure that you are in compliance with local laws and regulations before you make any purchase.
       </p>
     </div>
   );

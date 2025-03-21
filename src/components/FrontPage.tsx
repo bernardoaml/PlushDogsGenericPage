@@ -21,52 +21,54 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
         <img
           src={logoUrl}
           alt="Logo"
-          className="h-12 w-auto object-contain rounded-full"
+          className="h-12 w-auto object-contain rounded-full hidden lg:flex"
         />
 
         {/* Navegação */}
-        <nav className="flex space-x-8 text-white font-bold text-lg">
-          <a href="#about" className="hover:text-blue-500 transition">About</a>
-          <a href="#tokenomics" className="hover:text-blue-500 transition">Tokenomics</a>
-          <a href="#why-us" className="hover:text-blue-500 transition">Why Choose Us?</a>
-        </nav>
+        <nav className="flex space-x-8 text-white font-bold text-lg items-center">
+          <a href="#about" className="hover:text-cyan-500 transition hidden lg:flex">About</a>
+          <a href="#tokenomics" className="hover:text-cyan-500 hidden lg:flex transition">Tokenomics</a>
+          <a href="#why-us" className="hover:text-cyan-500 hidden lg:flex transition">Why Choose Us?</a>
 
-        {/* Botão "Buy Now" e ícones sociais */}
-        <div className="flex items-center space-x-4">
-          {/* Botão "Buy Now" */}
           <a
             href={buyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300"
+            className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300"
           >
             Buy Now
           </a>
 
+        </nav>
+
+        {/* Botão "Buy Now" e ícones sociais */}
+        <div className="flex items-center space-x-6">
+          {/* Botão "Buy Now" */}
+          
           {/* Ícones sociais */}
           <a
             href="https://t.me/PlushDogSol/"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:text-blue-500 transition"
+            className="text-sky-300 hover:text-sky-200 transition"
           >
-            <FaTelegramPlane size={24} />
+            <FaTelegramPlane size={28} />
           </a>
           <a
             href="https://x.com/PlushDogSolana/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500 transition"
+            className="text-sky-300 hover:text-sky-200 transition"
           >
-            <FaTwitter size={24} />
+            <FaTwitter size={28} />
           </a>
         </div>
       </div>
 
       {/* Conteúdo Principal */}
-      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center p-8">
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center p-4 lg:p-8 ">
         <h1 id="about" className="text-5xl font-extrabold text-white drop-shadow-lg font-custom">{title}</h1>
-        <p className="text-lg mt-4 text-gray-300 max-w-4xl mx-auto font-custom">{description}</p>
+        <p className="text-md lg:text-lg mt-4 text-gray-300 max-w-4xl mx-auto font-custom">{description}</p>
         {imageUrl && (
           <img
             src={imageUrl}

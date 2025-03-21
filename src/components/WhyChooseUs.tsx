@@ -26,11 +26,11 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         <img
           src={leftImage}
           alt="Left Illustration"
-          className="max-w-sm md:max-w-xl object-contain"
+          className="max-w-sm md:max-w-xl object-contain hidden md:flex"
         />
 
         {/* Texto no Quadrado */}
-        <div className=" text-gray-300 font-bold text-xl rounded-lg px-8 py-6 mx-4 max-w-xl font-custom">
+        <div className=" text-gray-300 font-bold text-md md:text-lg rounded-lg px-8 py-6 md:mx-4 max-w-xl font-custom">
           {description}
         </div>
 
@@ -38,7 +38,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         <img
           src={rightImage}
           alt="Right Illustration"
-          className="max-w-sm md:max-w-xl object-contain"
+          className="max-w-sm md:max-w-xl object-contain hidden md:flex"
         />
       </div>
     </div>

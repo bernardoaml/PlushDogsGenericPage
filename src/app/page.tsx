@@ -15,7 +15,7 @@ const App: React.FC = () => {
       title: "PLUSH DOG $PLUSH",
       description: "Is a fun and innovative meme token that brings the energy and spirit of cryptocurrency to the world of dog lovers. With a focus on building a strong and engaged community, PLUSH aims to be more than just a currency it’s a true \"family\" in the crypto universe. Join the PLUSH DOG journey and be part of a movement that’s about more than just numbers it’s about fun, friendship, and a love for dogs.ㅤㅤㅤㅤㅤGet ready!!",
       imageUrl: "/plushgif.gif", // Substituir pelo URL real da imagem
-      logoUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHl1c2lxdDVlbDZzNThmcGZobWxuMjJkN2s3NXgzZWJyZnozZnBjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nQDKSeRlIyfmw/giphy.webp", // Substituir pela URL real do logo
+      logoUrl: "/plushtalk1.png", // Substituir pela URL real do logo
       buyLink: "https://pump.fun/buy-amazing-token", // Substituir pelo link real
   };
 

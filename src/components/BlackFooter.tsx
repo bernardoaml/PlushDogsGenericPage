@@ -29,7 +29,7 @@ const BlackFooter: React.FC = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl hover:text-blue-400 transition"
+            className="text-2xl hover:text-sky-400 transition"
           >
             <FaTwitter className="drop-shadow-[0_0_5px_#fff]" />
           </a>
@@ -37,7 +37,7 @@ const BlackFooter: React.FC = () => {
             href="https://telegram.org"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl hover:text-blue-400 transition"
+            className="text-2xl hover:text-sky-400 transition"
           >
             <FaTelegramPlane className="drop-shadow-[0_0_5px_#fff]" />
           </a>
