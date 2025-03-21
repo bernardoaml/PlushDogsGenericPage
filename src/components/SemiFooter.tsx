@@ -5,7 +5,7 @@ const SemiFooter: React.FC = () => {
   return (
     <div className="relative bg-gradient-to-r from-gray-900 to-black text-white py-16 px-8 text-center">
       {/* Título */}
-      <h2 className="text-4xl font-bold mb-4">Join the PLUSH DOG Community</h2>
+      <h2 className="text-4xl font-bold mb-4 font-custom">Join the PLUSH DOG Community</h2>
       {/* Texto descritivo */}
       <p className="text-lg max-w-2xl mx-auto mb-8">
       Be Part of the Pack: Connect, Grow, and Thrive with us!

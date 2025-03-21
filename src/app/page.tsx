@@ -13,7 +13,7 @@ const App: React.FC = () => {
   const [showContent, setShowContent] = useState(false); // Estado para controlar os componentes
   const tokenData = {
       title: "PLUSH DOG $PLUSH",
-      description: "Is a fun and innovative meme token that brings the energy and spirit of cryptocurrency to the world of dog lovers. With a focus on building a strong and engaged community, PLUSH aims to be more than just a currency it’s a true \"family\" in the crypto universe. Join the PLUSH DOG journey and be part of a movement that’s about more than just numbers it’s about fun, friendship, and a love for dogs.ㅤㅤㅤㅤㅤGet ready!!",
+      description: "Is a fun and innovative meme token that brings the energy and spirit of cryptocurrency to the world of dog lovers. With a focus on building a strong and engaged community, PLUSH aims to be more than just a currency it’s a true \"family\" in the crypto universe. Join the PLUSH DOG journey and be part of a movement that’s about more than just numbers it’s about fun, friendship, and a love for dogs. Get ready!!",
       imageUrl: "/plushgif.gif", // Substituir pelo URL real da imagem
       logoUrl: "/plushtalk1.png", // Substituir pela URL real do logo
       buyLink: "https://pump.fun/buy-amazing-token", // Substituir pelo link real

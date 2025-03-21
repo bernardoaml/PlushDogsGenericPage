@@ -68,7 +68,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
       {/* Conteúdo Principal */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center p-4 lg:p-8 ">
         <h1 id="about" className="text-5xl font-extrabold text-white drop-shadow-lg font-custom">{title}</h1>
-        <p className="text-md lg:text-lg mt-4 text-gray-300 max-w-4xl mx-auto font-custom">{description}</p>
+        <p className="text-2xl lg:text-lg mt-4 text-gray-300 max-w-4xl mx-auto font-custom">{description}</p>
         {imageUrl && (
           <img
             src={imageUrl}
