@@ -45,7 +45,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
 
           {/* Ícones sociais */}
           <a
-            href="https://telegram.org/"
+            href="https://t.me/PlushDogSol/"
             target="_blank"
             rel="noopener noreferrer"
             className=" hover:text-blue-500 transition"
@@ -53,7 +53,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
             <FaTelegramPlane size={24} />
           </a>
           <a
-            href="https://twitter.com/"
+            href="https://x.com/PlushDogSolana/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition"
@@ -65,7 +65,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, description, imageUrl, log
 
       {/* Conteúdo Principal */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center p-8">
-        <h1 className="text-5xl font-extrabold text-white drop-shadow-lg font-custom">{title}</h1>
+        <h1 id="about" className="text-5xl font-extrabold text-white drop-shadow-lg font-custom">{title}</h1>
         <p className="text-lg mt-4 text-gray-300 max-w-4xl mx-auto font-custom">{description}</p>
         {imageUrl && (
           <img

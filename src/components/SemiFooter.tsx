@@ -32,7 +32,7 @@ const SemiFooter: React.FC = () => {
   {/* Twitter */}
   <div className="flex flex-col items-center">
     <a
-      href="https://twitter.com"
+      href="https://x.com/PlushDogSolana"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -44,7 +44,7 @@ const SemiFooter: React.FC = () => {
   {/* Telegram */}
   <div className="flex flex-col items-center">
     <a
-      href="https://telegram.org"
+      href="https://t.me/PlushDogSol"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -62,7 +62,7 @@ const SemiFooter: React.FC = () => {
     >
       <FaInstagram size={48} className="text-blue-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Instagram Growing!</p>
+    <p className="font-bold">Coming Soon!</p>
   </div>
 
   {/* YouTube */}
@@ -74,7 +74,7 @@ const SemiFooter: React.FC = () => {
     >
       <FaYoutube size={48} className="text-blue-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">Youtube Growing!</p>
+    <p className="font-bold">Coming Soon!</p>
   </div>
 
   {/* TikTok */}
@@ -86,7 +86,7 @@ const SemiFooter: React.FC = () => {
     >
       <FaTiktok size={48} className="text-blue-400 mb-2 cursor-pointer" />
     </a>
-    <p className="font-bold">TikTok Growing!</p>
+    <p className="font-bold">Coming Soon!</p>
   </div>
 
       </div>

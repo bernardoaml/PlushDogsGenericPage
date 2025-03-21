@@ -20,7 +20,7 @@ const Tokenomics: React.FC<TokenomicsProps> = ({ leftImage, chartImage }) => {
       {/* Conteúdo à Direita */}
       <div className="flex-1 flex flex-col items-center text-white text-center outline-8 outline-black">
         {/* Título */}
-        <h2 className="text-5xl font-bold mb-8 drop-shadow-lg font-custom ">Tokenomics</h2>
+        <h2 id="tokenomics" className="text-5xl font-bold mb-8 drop-shadow-lg font-custom ">Tokenomics</h2>
 
         {/* Imagem do Gráfico */}
         <img

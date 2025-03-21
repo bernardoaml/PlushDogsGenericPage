@@ -16,7 +16,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   return (
     <div className="relative bg-[url('/back4.png')] py-16 px-8 flex flex-col items-center text-center">
       {/* Título */}
-      <h2 className="text-5xl font-bold text-white mb-8 drop-shadow-lg font-custom">
+      <h2 id="why-us" className="text-5xl font-bold text-white mb-8 drop-shadow-lg font-custom">
         {title}
       </h2>
 
